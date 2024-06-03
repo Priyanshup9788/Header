@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 1</title>
+
+    <!-- fontAwsome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <!-- bootstrap file -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+    <style>
+        .carousel-control-prev,.carousel-control-next{
+            top:50%;
+            bottom: 50%;
+        }
+
+        .navbar .show{
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar  navbar-expand-md position-absolute top-0 left-0 z-1 w-100 ">
+        <div class="container">
+            <a href="" class="navbar-brand text-white">logo</a>
+            <button class="navbar-toggler text-white" data-bs-toggle="collapse" data-bs-target="#click">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="click">
+                <ul class="navbar-nav ms-auto">
+                    <li><a href="" class="nav-link text-white">home</a></li>
+                    <li class="nav-item dropdown"><a href="" class="nav-link dropdown-item text-white">About</a></li>
+                    <li><a href="" class="nav-link text-white">Shop</a></li>
+                    <li><a href="" class="nav-link text-white">Contactus</a></li>
+                    
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- offcanvas asidebar -->
+    <div id="on" class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="static">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-heading">Heading</h5>
+            <button class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus aspernatur eaque perferendis minima cupiditate obcaecati qui ea asperiores. Quam temporibus tempora distinctio earum dolor, illum odit eos fuga debitis accusamus.</p>
+        </div>
+    </div>
+
+    <!-- modal -->
+    <div id="of" class="modal " data-bs-backdrop="static">
+        <div class="modal-dialog modal-dialog-centered" >
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Contact Us</h5>
+                    <button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <button class="btn btn-primary" data-bs-toggle="popover" title="title of popover" data-bs-content="details of popover">popover</button>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    
+
+    <main>
+        <div class="main-slider">
+            <div id="craouselex" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button data-bs-target="#craouselex" data-bs-slide-to="0" class="active"></button>
+                    <button data-bs-target="#craouselex" data-bs-slide-to="1"></button>
+                    <button data-bs-target="#craouselex" data-bs-slide-to="2"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="slider-content position-relative">
+                            <img src="assets/img/slide1.jpeg" class="vh-100 w-100 position-absolute top-0 left-0 z-n1" alt="slide" >
+                            <div class="container">
+                                <div class="d-flex align-items-center vh-100 w-100">
+                                    <h2 class="text-white text-center">slide1</h2>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="slider-content position-relative">
+                            <img src="assets/img/slide2.jpg" class="vh-100 w-100 position-absolute top-0 left-0 z-n1" alt="slide" >
+                            <div class="container">
+                                <div class="d-flex align-items-center vh-100 w-100">
+                                    <h2 class="text-white text-center">slide2</h2>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="slider-content position-relative">
+                            <img src="assets/img/slide3.jpg" class="vh-100 w-100 position-absolute top-0 left-0 z-n1" alt="slide" >
+                            <div class="container">
+                                <div class="d-flex align-items-center vh-100 w-100">
+                                    <h2 class="text-white text-center">slide3</h2>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" data-bs-target="#craouselex" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" data-bs-target="#craouselex" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+        </div>
+
+        <section class="py-5">
+            <div class="container">
+                <div class=" border border-1 p-5">
+                    <div class="row">
+                        <div class="mb-5 col-sm-6 col-md-4">
+                            <div class="card">
+                                <img src="assets/img/prod1.jpg" alt="prod" class="card-img-top"  height="355px" width="355px">
+                                <div class="card-body">
+                                    <h5 class="card-title">Car 1</h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et, iusto vel pariatur accusantium deleniti laborum voluptas, culpa exercitationem commodi illo sunt voluptatum ut expedita asperiores soluta voluptates maiores? Fugit, at.</p>
+                                    <button class="btn btn-primary">Read More...</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-5 col-sm-6 col-md-4">
+                            <div class="card">
+                                <img src="assets/img/prod2.jpg" alt="prod" class="card-img-top" height="355px" width="355px">
+                                <div class="card-body">
+                                    <h5 class="card-title">Car 2</h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et, iusto vel pariatur accusantium deleniti laborum voluptas, culpa exercitationem commodi illo sunt voluptatum ut expedita asperiores soluta voluptates maiores? Fugit, at.</p>
+                                    <button class="btn btn-primary">Read More...</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-5 col-sm-6 col-md-4">
+                            <div class="card">
+                                <img src="assets/img/prod3.jpg" alt="prod" class="card-img-top"  height="355px" width="355px">
+                                <div class="card-body">
+                                    <h5 class="card-title">Car 3</h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et, iusto vel pariatur accusantium deleniti laborum voluptas, culpa exercitationem commodi illo sunt voluptatum ut expedita asperiores soluta voluptates maiores? Fugit, at.</p>
+                                    <button class="btn btn-primary">Read More...</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="pagination justify-content-center">
+                        <li class="page-item">
+                            <a href="" class="page-link">Prev</a>
+                        </li>
+                        <li class="page-item active">
+                            <a href="" class="page-link">1</a>
+                        </li>
+                        <li class="page-item">
+                            <a href="" class="page-link">2</a>
+                        </li>
+                        <li class="page-item">
+                            <a href="" class="page-link">3</a>
+                        </li>
+                        <li class="page-item">
+                            <a href="" class="page-link">Next</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-5">
+            <div class="container">
+                <div class="accordion" id="accord">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#itm1">
+                                Item-1
+                        </button>
+                        </h2>
+                        <div id="itm1" class="accordion-collapse collapse" data-bs-parent="#accord">
+                            <div class="accordion-body">
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi numquam ab quibusdam doloremque error placeat possimus ipsum laudantium unde architecto tenetur accusamus necessitatibus quidem neque, itaque, optio illum id culpa?</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#itm2">
+                                Item-2
+                        </button>
+                        </h2>
+                        <div id="itm2" class="accordion-collapse collapse" data-bs-parent="#accord">
+                            <div class="accordion-body">
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi numquam ab quibusdam doloremque error placeat possimus ipsum laudantium unde architecto tenetur accusamus necessitatibus quidem neque, itaque, optio illum id culpa?</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-5">
+            <div class="container">
+                <div class="w-50">
+                    <div class="progress mb-2"  style="height:30px">
+                        <div class="progress-bar w-25 progress-bar-striped progress-bar-animated">25%</div>
+                    </div>
+                    <div class="progress mb-2">
+                        <div class="progress-bar w-50 text-danger bg-warning">50%</div>
+                    </div>
+                </div>
+                <div class="w-50">
+                    <div class="progress-stacked">
+                        <div class="progress mb-2 w-25">
+                            <div class="progress-bar bg-info" >25%</div>
+                        </div>
+                        <div class="progress mb-2 w-50">
+                            <div class="progress-bar bg-warning" >50%</div>
+                        </div>
+                        <div class="progress mb-2 w-50">
+                            <div class="progress-bar bg-info" >50%</div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+        
+    </main>
+
+
+    <!-- Bootstrap js file -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+
+</html>
